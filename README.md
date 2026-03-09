@@ -49,7 +49,7 @@ Para compilar y ejecutar el proyecto localmente, necesitarás tener instalado lo
 
 1.  **Clona el repositorio:**
     ```bash
-    git clone <[URL_DEL_REPOSITORIO](https://github.com/Endervscode/Simulador-de-Flujo-en-Redes)>
+    git clone <https://github.com/Endervscode/Simulador-de-Flujo-en-Redes>
     cd Simulador
     ```
 
