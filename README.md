@@ -49,7 +49,7 @@ Para compilar y ejecutar el proyecto localmente, necesitarás tener instalado lo
 
 1.  **Clona el repositorio:**
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
+    git clone <[URL_DEL_REPOSITORIO](https://github.com/Endervscode/Simulador-de-Flujo-en-Redes)>
     cd Simulador
     ```
 
@@ -64,5 +64,6 @@ Para compilar y ejecutar el proyecto localmente, necesitarás tener instalado lo
     ```bash
     mvn javafx:run
     ```
+
 
 Esto abrirá la ventana del simulador, y estará listo para ser utilizado.
