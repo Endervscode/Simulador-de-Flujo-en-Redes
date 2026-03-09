@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.simulador.controlador.NetworkController" stylesheets="@styles.css">
+    <top>
+        <HBox spacing="15" alignment="CENTER_LEFT" styleClass="top-bar">
+            <padding><Insets top="15" right="15" bottom="15" left="15"/></padding>
+            <Button text="▶ Ejecutar Simulación" onAction="#ejecutarSimulacionAnimada" styleClass="btn-run" />
+            <Button text="Reiniciar Flujo" onAction="#reiniciarFlujos" styleClass="btn-reset" />
+            <Button text="Limpiar Grafo" onAction="#limpiarGrafo" styleClass="btn-clear" />
+            <Label fx:id="lblFlujoMaximo" text="Flujo Máximo: 0" styleClass="label-max-flow" />
+            <Label text="Clic Izq: Crear Nodo | Clic Nodos: Conectar | Clic Der: Menú" styleClass="label-instructions" />
+        </HBox>
+    </top>
+    
+    <center>
+        <Pane fx:id="lienzo" styleClass="canvas-pane" />
+    </center>
+    
+    <right>
+        <VBox spacing="10" prefWidth="280" styleClass="sidebar">
+            <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+            <Label text="Consola de Algoritmo" styleClass="label-max-flow" />
+            <TextArea fx:id="txtLogs" editable="false" wrapText="true" VBox.vgrow="ALWAYS" styleClass="log-area"/>
+        </VBox>
+    </right>
+</BorderPane>
